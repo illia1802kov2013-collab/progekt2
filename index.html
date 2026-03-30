@@ -11,9 +11,10 @@
     height: 41px;
     top: -13.5px;
     left: -15px;
-   justify-content:space-between;
-   
-    text-decoration: none;
+  }
+  nav {
+    justify-content: space-between;
+    display: flex;
   }
   .logo {
     color: #FED136;
@@ -21,47 +22,150 @@
     height: 53px;
     top: -3px;
   }
+  footer {
+    background-color: #222222;
+    width: 1,404px;
+    height: 679px;
+  }
+  .contact {
+    color: #FFFFFF;
+    width: 288px;
+    height: 49px;
+    top: 92px;
+    left: 576px;
+    display: flex;
+  text-align: center;    
+  }
+  .hero {
+    width:934px;
+    height: 330px;
+    top: 192px;
+    left: 233px
+   justify-content: space-between;
+    display: flex;
+  }
+  .conteiner {
+    display: flex;
+      flex-direction: row;
+      
+  }
+  .your-name {
+    width: 455px;
+    height: 50px;
+    top: 2px;
+    left: 1px;
+    border: 1px;
+     display: flex;
+      flex-direction: row;
+margin-bottom: 10px;
+  }
+  .your-email {
+ width: 457px;
+    height: 53px;
+    top: 80px;
+    border: 1px;
+     display: flex;
+      flex-direction: row;
+      margin-bottom: 10px;
+  }
+  .your-subject {
+    width: 457px;
+    height: 53px;
+    top: 161px;
+    border: 1px;
+     display: flex;
+      flex-direction: row;
+      margin-bottom: 10px;
+  }
+  textarea {
+    width: 458px;
+    height: 212px;
+    top: 484px;
+    border: 1px;
+  display: block;
+  margin-left: auto;
+
+  }
+  .h1 {
+    text-align: center;
+  }
+.div {
+    display: flex;
+    justify-content: center;
+}
+.box {
+    display: flex;
+    justify-content: center;
+}
+.nav li {
+    list-style: none;
+    display: inline-block;
+    margin:  20px;
+}
+button {
+    width: 242px;
+    height: 68px;
+    top: 496px;
+    left: 582px;
+    background-color: #FED136;
+ display: flex;
+ justify-content: center;
+}
     </style>
+
 </head>
 <body>
     <header>
        
-        <nav>
+        <nav class="nav">
             <ul>
                 <li class="logo">Golden</li>
-                <li><a href="">Home</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="home">Home</a></li>
+                <li><a href="services">Services</a></li>
+                <li><a href="portfolio">Portfolio</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="hero">
-             <h1>Services</h1>
+          <div class="box">
+  <h1 class="h1">Services</h1>
+          </div>
+           
             <article>
-                <img src="./img/colo.png" alt=""> 
+                <img src="./img/servis.png" alt=""> 
             <h3>E-Commerce</h3>
             <p>Proin iaculis purus consequat sem cure  digni ssim. Donec porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt.</p>
               
             </article>
           <article>
+            <img src="./img/basket.png" alt="basket">
               <h3>Responsive Web</h3>
               <p>Proin iaculis purus consequat sem cure  digni ssim. Donec porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt.</p>
           </article>
           <article>
+            <img src="./img/look.png" alt="look">
             <h3>Web Security</h3>
             <p>Proin iaculis purus consequat sem cure  digni ssim. Donec porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt.</p>
           </article>
         </section> 
     </main>
       <footer>
-        <h2>Contact us</h2>
-        <input type="text" placeholder="your Name">
-        <input type="email" placeholder="your Email">
-        <input type="text" placeholder="subject">
-        <textarea placeholder="your Message"></textarea>
+        <div class="div">
+<h2 class="contact">Contact us</h2>
+        </div>
+        
+        <article class="container">
+          <input type="text" placeholder="your Name" class="your-name">
+            <input type="email" placeholder="your Email"class="your-email">
+        <input type="text" placeholder="subject"class="your-subject">
+        </article>
+          
+            <textarea placeholder="your Message" ></textarea>
+          
+      
         <button type="submit">Send Message</button>
       </footer>
 </body>
