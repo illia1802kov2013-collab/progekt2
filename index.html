@@ -13,7 +13,7 @@
     left: -15px;
   }
   nav {
-    justify-content: space-between;
+    justify-content: center;
     display: flex;
   }
   .logo {
@@ -41,13 +41,13 @@
     height: 330px;
     top: 192px;
     left: 233px
-   justify-content: space-between;
+    justify-content: space-between;
     display: flex;
   }
   .conteiner {
     display: flex;
       flex-direction: row;
-      
+   
   }
   .your-name {
     width: 455px;
@@ -82,9 +82,12 @@ margin-bottom: 10px;
     height: 212px;
     top: 484px;
     border: 1px;
-  display: block;
-  margin-left: auto;
+  
 
+  }
+  .textarea {
+    margin-left: auto;
+  
   }
 
   
@@ -113,6 +116,9 @@ button {
     display: flex;
     justify-content: center;
 }
+.article {
+    display: flex;
+}
     </style>
 
 </head>
@@ -131,12 +137,12 @@ button {
         </nav>
     </header>
     <main>
-        <section class="hero">
+        <section >
           <div class="box">
   <h1>Services</h1>
           </div>
-           
-            <article>
+           <div class="hero">
+  <article>
                 <img src="./img/servis.png" alt=""> 
             <h3>E-Commerce</h3>
             <p>Proin iaculis purus consequat sem cure  digni ssim. Donec porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt.</p>
@@ -152,20 +158,27 @@ button {
             <h3>Web Security</h3>
             <p>Proin iaculis purus consequat sem cure  digni ssim. Donec porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt.</p>
           </article>
+           </div>
+          
+          
         </section> 
     </main>
       <footer>
         <div class="div">
 <h2 class="contact">Contact us</h2>
         </div>
-        
-        <article class="container">
+        <div class="article">
+ <article class="container">
           <input type="text" placeholder="your Name" class="your-name">
             <input type="email" placeholder="your Email"class="your-email">
         <input type="text" placeholder="subject"class="your-subject">
         </article>
-          
-            <textarea placeholder="your Message" ></textarea>
+          <article class="textarea">
+    <textarea placeholder="your Message" ></textarea>
+          </article>
+        </div>
+       
+        
           <div class="button">
   <button type="submit" >Send Message</button>
           </div>
