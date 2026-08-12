@@ -1,0 +1,22 @@
+ a {
+    color: #FED136;
+    width: 75px;
+    height: 41px;
+    top: -13.5px;
+    left: -15px;
+  }
+  nav {
+    justify-content: center;
+    display: flex;
+  }
+  .logo {
+    color: #FED136;
+    width: 153px;
+    height: 53px;
+    top: -3px;
+  }
+  .nav li {
+    list-style: none;
+    display: inline-block;
+    margin:  20px;
+}
