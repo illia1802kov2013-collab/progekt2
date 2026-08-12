@@ -1,5 +1,5 @@
  a {
-    color: #FED136;
+    color: $color2;
     width: 75px;
     height: 41px;
     top: -13.5px;
@@ -10,8 +10,8 @@
     display: flex;
   }
   .logo {
-    color: #FED136;
-    width: 153px;
+    color: $color2;
+    width: $header-width;
     height: 53px;
     top: -3px;
   }
