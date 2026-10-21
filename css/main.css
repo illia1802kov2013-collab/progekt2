@@ -1,6 +1,7 @@
 a {
   text-decoration: none;
   color: inherit;
+  font-size: 10px;
 }
 
 .page {
@@ -125,20 +126,6 @@ a {
 .socials {
   display: flex;
   gap: 7px;
-}
-
-.socials a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0.12);
-  color: #72795d;
-  font-size: 9px;
-  font-weight: 700;
-  transition: 0.2s;
 }
 
 .socials a:hover {
